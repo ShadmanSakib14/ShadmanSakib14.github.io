@@ -4,9 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Md. Shadman Sakib — Applied Mathematician</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
+  /* ── SYSTEM FONT STACKS — zero external requests ── */
+  @font-face {
+    font-family: 'DisplaySerif';
+    src: local('Georgia'), local('Times New Roman'), local('serif');
+  }
+
   :root {
+    --font-display: Georgia, 'Times New Roman', 'Palatino Linotype', serif;
+    --font-mono: 'Courier New', 'Lucida Console', monospace;
     --ink: #0d0d0d;
     --paper: #f5f0e8;
     --cream: #ede8db;
@@ -24,7 +31,7 @@
   body {
     background: var(--paper);
     color: var(--ink);
-    font-family: 'DM Mono', monospace;
+    font-family: var(--font-mono);
     font-weight: 300;
     font-size: 14px;
     line-height: 1.7;
@@ -58,7 +65,7 @@
   }
 
   .name-block h1 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-display);
     font-size: clamp(3rem, 8vw, 7rem);
     line-height: 0.95;
     letter-spacing: -0.02em;
@@ -106,7 +113,7 @@
     position: absolute;
     right: 8vw;
     top: 30px;
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-display);
     font-size: 180px;
     color: transparent;
     -webkit-text-stroke: 1px var(--rule);
@@ -195,7 +202,7 @@
   }
 
   .about-text p:first-child::first-letter {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-display);
     font-size: 4em;
     line-height: 0.8;
     float: left;
@@ -248,7 +255,7 @@
   .skill-card:hover { background: var(--cream); }
 
   .skill-name {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-display);
     font-size: 22px;
     margin-bottom: 16px;
     color: var(--ink);
@@ -323,7 +330,7 @@
   }
 
   .timeline-title {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-display);
     font-size: 22px;
     margin-bottom: 4px;
   }
@@ -381,7 +388,7 @@
   }
 
   .cert-card-title {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-display);
     font-size: 20px;
     margin-bottom: 6px;
   }
@@ -400,7 +407,7 @@
   }
 
   .transcript-block h3 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-display);
     font-size: 20px;
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -493,7 +500,7 @@
   }
 
   footer .footer-name {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-display);
     font-size: 28px;
   }
 
@@ -545,7 +552,7 @@
       <div><strong>Based in</strong> Bangladesh</div>
       <div><strong>Dept.</strong> Applied Mathematics</div>
       <div><strong>Univ.</strong> NSTU, Noakhali</div>
-      <div><strong>GitHub</strong> <a href="https://github.com/shadmansakib" style="color:var(--accent2); text-decoration:none;">@shadmansakib</a></div>
+      <div><strong>GitHub</strong> <a href="https://github.com/shadmansakib14" style="color:var(--accent2); text-decoration:none;">@shadmansakib</a></div>
     </div>
   </div>
 </header>
@@ -818,7 +825,7 @@
     <div class="fade-in" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:2px; background:var(--ink); border:2px solid var(--ink);">
       <div style="background:var(--paper); padding:28px 32px;">
         <div style="font-size:10px; color:var(--accent); letter-spacing:0.2em; text-transform:uppercase; margin-bottom:12px;">Theoretical Framework</div>
-        <div style="font-family:'DM Serif Display',serif; font-size:20px; margin-bottom:10px;">Elastic Truth Geometry (ETG)</div>
+        <div style="font-family: var(--font-display); font-size:20px; margin-bottom:10px;">Elastic Truth Geometry (ETG)</div>
         <div style="font-size:12px; color:#3a3530; line-height:1.75;">
           Models epistemic states as geometric structures S = (X, F, R, C, T). Opponents rotate axes without lying: S′ = Rθ(X). 
           Introduces operator algebra {Ω_up, Ω_expand, Ω_meta, Ω_compress, Ω_down} and Epistemic Stability Index ESI = β/α.
@@ -827,7 +834,7 @@
       </div>
       <div style="background:var(--paper); padding:28px 32px;">
         <div style="font-size:10px; color:var(--accent); letter-spacing:0.2em; text-transform:uppercase; margin-bottom:12px;">Cognitive Science</div>
-        <div style="font-family:'DM Serif Display',serif; font-size:20px; margin-bottom:10px;">Top-K Cognitive Compression (TKC)</div>
+        <div style="font-family: var(--font-display); font-size:20px; margin-bottom:10px;">Top-K Cognitive Compression (TKC)</div>
         <div style="font-size:12px; color:#3a3530; line-height:1.75;">
           Information-theoretic model of cognition as bounded compression. 
           Models how minds prioritize and discard information under cognitive load. 
@@ -836,7 +843,7 @@
       </div>
       <div style="background:var(--paper); padding:28px 32px;">
         <div style="font-size:10px; color:var(--accent2); letter-spacing:0.2em; text-transform:uppercase; margin-bottom:12px;">Applied Platform</div>
-        <div style="font-family:'DM Serif Display',serif; font-size:20px; margin-bottom:10px;">DRIVNET</div>
+        <div style="font-family: var(--font-display); font-size:20px; margin-bottom:10px;">DRIVNET</div>
         <div style="font-size:12px; color:#3a3530; line-height:1.75;">
           Geo-social platform for truck drivers in Bangladesh. 
           Features Bayesian reputation scoring, Markov career modelling, 
@@ -845,7 +852,7 @@
       </div>
       <div style="background:var(--paper); padding:28px 32px;">
         <div style="font-size:10px; color:var(--accent2); letter-spacing:0.2em; text-transform:uppercase; margin-bottom:12px;">Game Theory</div>
-        <div style="font-family:'DM Serif Display',serif; font-size:20px; margin-bottom:10px;">Spatial Congestion Signals</div>
+        <div style="font-family: var(--font-display); font-size:20px; margin-bottom:10px;">Spatial Congestion Signals</div>
         <div style="font-size:12px; color:#3a3530; line-height:1.75;">
           Real-time signal design for decentralized coordination in spatial congestion games. 
           Target venues: WINE, SAGT, EC, GEB. 
